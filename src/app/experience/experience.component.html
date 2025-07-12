@@ -1,0 +1,16 @@
+<ngt-stats></ngt-stats>
+
+<ngts-perspective-camera [options]="{ makeDefault: true, position: [-200, 20, -300] }" #camera />
+
+<app-ngt-object3d [rootUrl]="'forest/'" [model]="[{ obj: 'forest', map: 'forest.png' }]"></app-ngt-object3d>
+
+<app-ngt-object3d [model]="[{ obj: 'complex_low_poly_airport', map: 'Texture_airport256b.png' }]"></app-ngt-object3d>
+<app-ngt-object3d [model]="[{ obj: 'airplane_3', map: 'Texture_airport256b.png' }]"></app-ngt-object3d>
+<app-ngt-object3d [model]="[{ obj: 'airplane_stairs', map: 'Texture_airport256b.png' }]"></app-ngt-object3d>
+
+<app-ngt-object3d
+  [model]="[{ obj: 'airplane_2', map: 'Texture_airport256b.png' }]"
+  [path]="airplaneFlightPath"
+></app-ngt-object3d>
+
+<ngts-orbit-controls />
